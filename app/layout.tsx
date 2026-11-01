@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
-import { Bricolage_Grotesque, Hanken_Grotesk } from "next/font/google";
+import { Sora, Hanken_Grotesk } from "next/font/google";
 import "./globals.css";
 
-const display = Bricolage_Grotesque({ subsets: ["latin"], variable: "--font-display" });
+const display = Sora({ subsets: ["latin"], variable: "--font-display" });
 const body = Hanken_Grotesk({ subsets: ["latin"], variable: "--font-body" });
 
 export const metadata: Metadata = {
-  title: "KSP Robotics",
-  description: "Robotic automation for warehouses, factories and labs. We design, build and maintain the systems.",
+  title: "Ksp Solutions",
+  description: "A crawler robot and analysis software for inspecting city water and sewage pipes.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
